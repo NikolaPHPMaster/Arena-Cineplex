@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Skeleton
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130902
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="@ViewBag.Keywords" />
+    <meta name="description" content="@ViewBag.Description" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Raleway:400,700,200,300,900,800" rel="stylesheet" type="text/css">
+    <link href="~/Content/default.css" rel="stylesheet" type="text/css" media="all" />
+    <!--[if IE 6]>
+    <link href="default_ie6.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+</head>
+<body>
+    <div id="wrapper" class="container">
+
+        @{
+            Html.RenderPartial("_nav");
+        }
+
+        @RenderBody()
+
+        <div id="footer-content" class="container">
+            <div id="fbox1">
+                <h2>Poslednje izmene</h2>
+                <ul class="style1">
+                    <li class="first"><a href="#">Novi termini filmova</a></li>
+                    <li><a href="#">Vrste kokica i premaza</a></li>
+                    <li><a href="#">Nove sale</a></li>
+                    <li><a href="#">Novi projektori</a></li>
+                </ul>
+            </div>
+            <div id="fbox2">
+                <h2>O nama</h2>
+                <p>Ovo je<strong> Arena Cineplex</strong>, renovirana 2010. godine u skladu sa najnovijim svetskim standardima. Rekonstrukcijom i adaptacijom starog bioskopskog prostora dobijen je prvi multipleks u Vojvodini, sa šest vrhunski opremljenih sala, ukupnog kapaciteta od skoro 1.000 mesta, kao i dva ugostiteljska objekta - Cinema i The End cafe.</p>
+                <a href="#" class="button-style">Procitaj vise</a>
+            </div>
+            <div id="fbox3">
+                <h2>Kontakt</h2>
+                <p>
+                    Adresa:
+                    Arena Cineplex
+                    Bulevar Mihajla Pupina 3
+                    21000 Novi Sad.
+                </p>
+
+            </div>
+        </div>
+    </div>
+   @RenderSection("FooterText", false);
+    <div id="footer">
+        <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+    </div>
+    <script src="https://kit.fontawesome.com/60df22b8e8.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Kontakt";
+}
+<div class="container">
+		<section class="section1">
+			<div class="sec1title">
+				<h1>Kontakt</h1>
+			</div>	
+		</section>
+		<section class="section2"> 
+			<div class="contactform">
+			<h5>Ostavite nam prouku...</h5>
+				<form action="#">
+					<label for="firstname">
+						<i style=" color: #E94730;" class="cntfrmicn fa fa-user"></i>
+						<input name="firstname" class="form-fields" type="text">
+					</label>
+					<label for="email">
+						<i style=" color: #E94730;" class="cntfrmicn fa fa-envelope"></i>
+						<input name="email" class="form-fields" type="text">
+					</label>
+					<label for="contact">
+						<i style=" color: #E94730;" class="cntfrmicn fa fa-phone"></i>
+						<input name="contact" class="form-fields" type="text">
+					</label>
+					<label for="textarea">
+						<i style=" color: #E94730;" class="cntfrmicn fa fa-comment"></i>
+						<textarea class="form-fields" name="textarea" id="" cols="30" rows="10"></textarea>
+					</label>
+					<button style=" color: #E94730;" class="form-fields button" value="Send" type="submit">Posalji <i style=" color: #E94730;" class="fa fa-paper-plane"></i></button>
+				</form>
+			</div>
+			
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class="contmap" style='overflow:hidden;height:550px;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map() { var myOptions = { zoom: 14, center: new google.maps.LatLng(19.075314480255834, 72.88153973865361), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(45.267136, 19.833549)});infowindow = new google.maps.InfoWindow({content:'<strong>My Location</strong><br>Novi Sad<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		
+				</section>
+	</div>
+@section FooterText{
+	<div class="vreme">
+	<h2>Vreme otvaranja:13h</h2>
+	<h2>Vreme zatvaranja:18h</h2>
+	<h3>Telefon:065533346</h3>
+		</div>
+	}  
